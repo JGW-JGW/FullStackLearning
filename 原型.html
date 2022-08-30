@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型</title>
+    <script type="text/javascript">
+        // 创建一个构造函数
+        function MyClass() {
+
+        }
+
+        MyClass.prototype.name = '我是原型中的名字';
+
+        let mc = new MyClass();
+
+        console.log('name' in mc);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

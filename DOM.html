@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <script type="text/javascript">
+        // 获取button对象
+        window.onload = function () {
+            let btn = document.getElementById('btn');
+            let btn1 = document.getElementById('btn1');
+            let btn2 = document.getElementById('btn2');
+
+            // 修改按钮文字
+            // btn.innerHTML = "I'm a button";
+
+            // 可以为按钮的对应事件绑定处理函数的形式来响应事件
+            btn.onclick = function () {
+                alert('单击触发');
+            };
+
+            btn1.ondblclick = function () {
+                alert('双击触发');
+            };
+
+            btn2.onmousemove = function () {
+                alert('鼠标移入指定区域时触发');
+            };
+        };
+
+
+    </script>
+</head>
+<body>
+<!-- 以下3行写法不方便维护 -->
+<!--<button id="btn" onclick="alert('单击事件触发');">单击事件</button>-->
+<!--<button id="btn1" ondblclick="alert('双击事件触发');">双击事件</button>-->
+<!--<button id="btn2" onmousemove="alert('鼠标移动到指定区域触发');">鼠标移动事件</button>-->
+<button id="btn">单击事件</button>
+<button id="btn1">双击事件</button>
+<button id="btn2">鼠标移动事件</button>
+</body>
+</html>
